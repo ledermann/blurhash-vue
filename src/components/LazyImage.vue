@@ -1,8 +1,13 @@
 <template>
-  <intersect @enter="onEnter">
+  <intersect @enter.once="onEnter">
     <div class="relative">
       <!-- Show the placeholder as background -->
-      <blurhash-img :hash="blurhash" :aspect-ratio="height / width"/>
+      <blurhash-img
+        :hash="blurhash"
+        :aspect-ratio="height / width"
+        class="absolute top-0 left-0 transition-opacity duration-500"
+        :class="isLoaded ? 'opacity-0' : 'opacity-100'"
+      />
 
       <!-- Show the real image on the top and fade in after loading -->
       <img
