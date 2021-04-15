@@ -1,5 +1,5 @@
 <template>
-  <intersect @enter.once="onEnter">
+  <div ref="wrapper" v-bind="$attrs">
     <div class="relative">
       <!-- Show the placeholder as background -->
       <blurhash-img
@@ -14,21 +14,18 @@
         ref="image"
         :width="width"
         :height="height"
-        v-bind="$attrs"
         class="absolute top-0 left-0 transition-opacity duration-500"
         :class="isLoaded ? 'opacity-100' : 'opacity-0'"
       >
     </div>
-  </intersect>
+  </div>
 </template>
 
 <script>
 import BlurhashImg from "./BlurhashImg";
-import Intersect from "vue-intersect";
 
 export default {
   components: {
-    Intersect,
     BlurhashImg
   },
 
@@ -56,9 +53,22 @@ export default {
 
   data() {
     return {
-      isVisible: false,
       isLoaded: false
     };
+  },
+
+  mounted() {
+    this.observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        this.onEnter()
+      }
+    })
+
+    this.observer.observe(this.$refs.wrapper)
+  },
+
+  unmounted () {
+    this.observer.disconnect()
   },
 
   methods: {

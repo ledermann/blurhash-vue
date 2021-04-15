@@ -1,8 +1,8 @@
 <template>
-  <div id="app" class="p-5 max-w-4xl mx-auto">
+  <div class="p-5 max-w-4xl mx-auto">
     <h1 class="my-2 text-3xl">Progressive image loading with BlurHash</h1>
 
-    <p>Example using Vue.js. Full article here:
+    <p>Example using Vue.js 3. Full article here:
       <br>
       <a
         class="underline"
