@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import BlurhashImg from "./BlurhashImg";
+import BlurhashImg from "@/components/BlurhashImg.vue";
 
 export default {
   components: {
