@@ -8,14 +8,14 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "blurhash": "^1.1.5",
-    "vue": "^3.2.37"
+    "blurhash": "^2.0.0",
+    "vue": "^3.2.39"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
-    "autoprefixer": "^10.4.8",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "autoprefixer": "^10.4.9",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
-    "vite": "^3.0.9"
+    "vite": "^3.1.0"
   }
 }
