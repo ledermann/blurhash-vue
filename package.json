@@ -18,5 +18,5 @@
     "tailwindcss": "^3.4.14",
     "vite": "^5.4.9"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.5.2"
 }
