@@ -9,16 +9,16 @@
   },
   "dependencies": {
     "blurhash": "^2.0.5",
-    "vue": "^3.5.22"
+    "vue": "^3.5.28"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.16",
-    "@vitejs/plugin-vue": "^6.0.1",
-    "tailwindcss": "^4.1.16",
-    "vite": "^7.1.12"
+    "@tailwindcss/vite": "^4.2.0",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "tailwindcss": "^4.2.0",
+    "vite": "^7.3.1"
   },
   "engines": {
     "node": ">=22"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.12.0"
 }
