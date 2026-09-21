@@ -20,5 +20,5 @@
   "engines": {
     "node": ">=22"
   },
-  "packageManager": "yarn@4.17.1"
+  "packageManager": "bun@1.4.2"
 }
